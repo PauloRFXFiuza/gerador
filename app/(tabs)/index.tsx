@@ -9,7 +9,11 @@ export default function App() {
   const  [size, setSize] = useState(10);
 
   function generatePassword(){
-    console.log("CLICOUUUU!")
+    let password = "";
+    for(let i = 0, n = charset.length; i < size; i++){
+      password += charset.charAt(Math.floor(Math.random() * n));
+    }
+    console.log(password);
   }
 
   return (
