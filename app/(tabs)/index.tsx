@@ -32,8 +32,8 @@ export default function App() {
       <View style={styles.area}>
         <Slider
           style={{height: 50}}
-          minimumValue={6}
-          maximumValue={20}
+          minimumValue={8}
+          maximumValue={35}
           maximumTrackTintColor="#FF0000"
           minimumTrackTintColor="#000"
           thumbTintColor="#392de9"
