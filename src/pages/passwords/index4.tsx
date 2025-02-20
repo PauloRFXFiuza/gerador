@@ -27,6 +27,7 @@ export function Passwords(){
 
         <View style={styles.content}>
             <FlatList
+                style= {{flex: 1, paddingTop: 14,}}
                 data={listPasswords}
                 keyExtractor={(item) => String(item)}
                 renderItem={({item}) => <Text>{item}</Text> }
