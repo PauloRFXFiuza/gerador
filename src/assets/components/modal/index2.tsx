@@ -7,6 +7,10 @@ export function ModalPassword(){
                 <Text style={styles.title}>Senha Gerada!</Text>
             </View>    
             
+            <Pressable>
+                <Text>Senha Fictícia</Text>
+            </Pressable>
+
         </View>
     )
 }
