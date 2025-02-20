@@ -1,5 +1,6 @@
 
 import { StyleSheet, Text, View, Image } from 'react-native';
+import Slider from '@react-native-community/slider';
 
 export default function App() {
   return (
@@ -8,7 +9,10 @@ export default function App() {
       source={require('C:/Users/paulo/Documents/Workspaces/App+Gerador+Senhas/gerador/src/assets/logo.png')}
       style={styles.logo}
       />
-      <Text style={styles.title}>20 catacteres</Text>
+      <Text style={styles.title}>20 caracteres</Text>
+      <View style={styles.area}>
+
+      </View>
     </View>
   );
 }
