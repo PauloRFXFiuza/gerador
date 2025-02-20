@@ -8,8 +8,8 @@ const Tab = createBottomTabNavigator();
 export function Routes(){
   return(
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Passwords" component={Passwords} />
+      <Tab.Screen name="Home" component={Home} options={{headerShown: false}}/>
+      <Tab.Screen name="Passwords" component={Passwords} options={{headerShown: false}}/>
     </Tab.Navigator>
   )
 }
