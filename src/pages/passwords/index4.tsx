@@ -1,7 +1,20 @@
+import { useState, useEffect } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
+import { useIsFocused } from '@react-navigation/native'
 
 export function Passwords(){
+  const [listPasswords, setListPasswords] = useState<string[]>([]);
+  const focused = useIsFocused();
+
+  useEffect(() => {
+    async function loadPasswords(){
+
+    }
+    loadPasswords();
+    
+  }, [focused])
+
   return(
     <SafeAreaView style={{flex: 1}}>
         <View style={styles.header}>
@@ -23,6 +36,7 @@ const styles = StyleSheet.create({
     title:{
         color: "#FFF",
         fontSize: 18,
+        fontWeight: "bold",
     }
   }
 )
