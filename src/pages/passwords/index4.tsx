@@ -2,17 +2,21 @@ import { useState, useEffect } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useIsFocused } from '@react-navigation/native'
+import  useStorage  from '@/src/hooks/useStorage'
 
 export function Passwords(){
   const [listPasswords, setListPasswords] = useState<string[]>([]);
   const focused = useIsFocused();
+  const {getItem} = useStorage();
 
   useEffect(() => {
     async function loadPasswords(){
+        const passwords = await getItem("@pass");
 
     }
+
     loadPasswords();
-    
+
   }, [focused])
 
   return(
