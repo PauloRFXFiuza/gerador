@@ -1,16 +1,16 @@
-import {useState} from 'react';
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import Slider from '@react-native-community/slider';
+import {useState} from "react";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import Slider from "@react-native-community/slider";
 
 export default function App() {
 
-  const [size, setSize] = useState(8);
+  const [size, setSize] = useState(10);
 
 
   return (
     <View style={styles.container}>
       <Image
-      source={require('C:/Users/paulo/Documents/Workspaces/App+Gerador+Senhas/gerador/src/assets/logo.png')}
+      source={require("C:/Users/paulo/Documents/Workspaces/App+Gerador+Senhas/gerador/src/assets/logo.png")}
       style={styles.logo}
       />
       <Text style={styles.title}>{size} caracteres</Text>
@@ -22,7 +22,8 @@ export default function App() {
           maximumValue={20}
           maximumTrackTintColor="#FF0000"
           minimumTrackTintColor="#000"
-          thumbTintColor='#392de9'
+          thumbTintColor="#392de9"
+
         />
       </View>
       <TouchableOpacity style={styles.button}>
@@ -40,9 +41,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container:{
     flex: 1,
-    backgroundColor: '#F3F3FF',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "#F3F3FF",
+    justifyContent: "center",
+    alignItems: "center",
   },
   logo:{
     marginBottom: 60
@@ -50,26 +51,26 @@ const styles = StyleSheet.create({
   area:{
     marginTop: 14,
     marginBottom: 14,
-    width: '80%',
-    backgroundColor: '#FFF',
+    width: "80%",
+    backgroundColor: "#FFF",
     borderRadius: 8,
     padding: 6,
   },
   button:{
-    backgroundColor: '#392de9',
-    width: '80%',
+    backgroundColor: "#392de9",
+    width: "80%",
     height: 50,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 8,
     marginBottom: 18,
   },
   buttonText:{
-    color: '#FFF',
+    color: "#FFF",
     fontSize: 20,
   },
   title:{
     fontSize: 30,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   }
 });
