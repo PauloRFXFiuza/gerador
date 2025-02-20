@@ -45,7 +45,7 @@ export default function App() {
         <Text style={styles.buttonText}>Gerar Senha</Text>
       </TouchableOpacity>
 
-      <Modal>
+      <Modal visible={modalVisible} animationType="fade">
         <ModalPassword/>
       </Modal>
 
