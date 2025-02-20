@@ -25,6 +25,7 @@ export function Routes(){
               }
             }}
         />
+        
       <Tab.Screen 
         name="Passwords" 
         component={Passwords} 
