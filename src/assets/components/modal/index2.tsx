@@ -72,11 +72,14 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
     },
     button:{
+        flex: 1,
         backgroundColor: "#392de9",
         width: "48%",
         height: 50,
         justifyContent: "center",
         alignItems: "center",
+        marginTop: 14,
+        marginBottom: 14,
         borderRadius: 8,
     },	
 })
