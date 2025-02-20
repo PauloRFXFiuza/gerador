@@ -4,7 +4,7 @@ import Slider from "@react-native-community/slider";
 
 export default function App() {
 
-  const [size, setSize] = useState(10);
+  const  [size, setSize] = useState(10);
 
 
   return (
@@ -24,7 +24,7 @@ export default function App() {
           minimumTrackTintColor="#000"
           thumbTintColor="#392de9"
           value={size}
-          onValueChange={(value) => setSize(value)}
+          onValueChange={(value) => setSize(Number(value.toFixed(0)))}
         />
       </View>
       <TouchableOpacity style={styles.button}>
