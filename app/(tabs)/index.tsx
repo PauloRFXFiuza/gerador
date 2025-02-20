@@ -21,8 +21,8 @@ export default function App() {
           thumbTintColor='#392de9'
         />
       </View>
-      <TouchableOpacity>
-        <Text>Gerar Senha</Text>
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>Gerar Senha</Text>
       </TouchableOpacity>
 
 
