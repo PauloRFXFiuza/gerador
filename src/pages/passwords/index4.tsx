@@ -3,11 +3,12 @@ import { View, Text, StyleSheet, FlatList } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useIsFocused } from '@react-navigation/native'
 import  useStorage  from '@/src/hooks/useStorage'
+import {PasswordItem} from '@/src/pages/passwords/components/passwordItem'
 
 export function Passwords(){
   const [listPasswords, setListPasswords] = useState<string[]>([]);
   const focused = useIsFocused();
-  const {getItem} = useStorage();
+  const {getItem, removeItem} = useStorage();
 
   useEffect(() => {
     async function loadPasswords(){
@@ -18,6 +19,11 @@ export function Passwords(){
     loadPasswords();
 
   }, [focused])
+
+async function handleDeletePassword(item) {
+    const passwords = await removeItem("@pass", item); 
+    setListPasswords(passwords);
+}
 
   return(
     <SafeAreaView style={{flex: 1}}>
@@ -30,7 +36,7 @@ export function Passwords(){
                 style= {{flex: 1, paddingTop: 14,}}
                 data={listPasswords}
                 keyExtractor={(item) => String(item)}
-                renderItem={({item}) => <Text>{item}</Text> }
+                renderItem={({item}) => <PasswordItem data={item} removePassword={() => handleDeletePassword(item)} /> } 
             />
         </View>
     </SafeAreaView>

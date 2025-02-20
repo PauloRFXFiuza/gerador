@@ -6,10 +6,10 @@ interface PasswordItemProps {
   removePassword: () => void;
 }
 
-export default function PasswordItem({ data, removePassword }: PasswordItemProps) {
+export function PasswordItem({ data, removePassword }: PasswordItemProps) {
   return (
     <Pressable onLongPress={removePassword} style={styles.container}>
-      <Text>{data}</Text>
+      <Text style={styles.text}>{data}</Text>
     </Pressable>
   );
 };
@@ -20,5 +20,12 @@ const styles = StyleSheet.create({
     padding: 14,
     width: "100%",
     marginBottom: 14,
+    borderRadius: 8,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  text:{
+    color: "#FFF",
   }
 });
