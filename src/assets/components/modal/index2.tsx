@@ -1,10 +1,10 @@
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Pressable } from "react-native";
 
 export function ModalPassword(){
     return(
         <View style={styles.container}>
             <View style={styles.content}>
-                <Text>Senha Gerada!</Text>
+                <Text style={styles.title}>Senha Gerada!</Text>
             </View>    
             
         </View>
@@ -19,9 +19,18 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     content:{
-        width: "80%",
+        width: "85%",
         backgroundColor: "#FFF",
-        padding: 20,
+        paddingTop: 24,
+        paddingBottom: 24,
+        alignItems: "center",
+        justifyContent: "center",
         borderRadius: 8,
+    },
+    title:{
+        fontSize: 20,
+        fontWeight: "bold",
+        color: "000",
+        marginBottom: 24,
     }	
 })
