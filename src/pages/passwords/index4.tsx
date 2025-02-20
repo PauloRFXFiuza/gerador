@@ -7,3 +7,7 @@ export function Passwords(){
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  }
+)
