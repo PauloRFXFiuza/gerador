@@ -3,9 +3,11 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 
 export function Passwords(){
   return(
-    <View>
-      <Text>Minhas senhas</Text>
-    </View>
+    <SafeAreaView style={{flex: 1}}>
+        <View style={styles.header}>
+            <Text style={styles.title}>Minhas senhas</Text>
+        </View>
+    </SafeAreaView>
   )
 }
 
