@@ -3,6 +3,10 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import Slider from '@react-native-community/slider';
 
 export default function App() {
+
+  const [size, setSize] = useState(10);
+
+
   return (
     <View style={styles.container}>
       <Image
