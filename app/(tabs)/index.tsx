@@ -7,6 +7,7 @@ let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 export default function App() {
 
   const  [size, setSize] = useState(10);
+  const  [passwordValue, setPasswordValue] = useState("");
 
   function generatePassword(){
     let password = "";
