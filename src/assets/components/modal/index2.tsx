@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity, Pressable } from "react-native";
 import * as Clipboard from "expo-clipboard";
+import useStorage from "@/src/hooks/useStorage";
 
 interface ModalPasswordProps {
     password: string;
@@ -8,8 +9,13 @@ interface ModalPasswordProps {
 
 export function ModalPassword({password, handleClose}: ModalPasswordProps) {
 
+    const {saveItem} = useStorage();
+    
     async function handleCopyPassword(){
         await Clipboard.setStringAsync(password);
+        await saveItem("@pass", password);
+        
+        
         alert("Senha Salva Com Sucesso!");
 
         handleClose();
