@@ -5,12 +5,12 @@ export function ModalPassword(){
         <View style={styles.container}>
             <View style={styles.content}>
                 <Text style={styles.title}>Senha Gerada!</Text>
+                
+                <Pressable style={styles.innerPassword}>
+                    <Text style={styles.text}>Senha Fictícia</Text>
+                </Pressable>
             </View>    
             
-            <Pressable style={styles.innerPassword}>
-                <Text style={styles.text}>Senha Fictícia</Text>
-            </Pressable>
-
         </View>
     )
 }
@@ -38,10 +38,9 @@ const styles = StyleSheet.create({
         marginBottom: 24,
     },
     innerPassword:{
-        width: "85%",
-        backgroundColor: "#FFF",
-        paddingTop: 24,
-        paddingBottom: 24,
+        width: "90%",
+        backgroundColor: "#0e0e0e",
+        padding: 14,
         alignItems: "center",
         justifyContent: "center",
         borderRadius: 8,
@@ -49,6 +48,8 @@ const styles = StyleSheet.create({
     },
     text:{
         fontSize: 18,
-        color: "#000",
+        color: "#FFF",
+        textAlign: "center",
+
     }	
 })
