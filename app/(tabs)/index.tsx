@@ -6,6 +6,16 @@ export default function App() {
 
   const  [size, setSize] = useState(10);
 
+  function generatePassword(){
+    let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    let password = "";
+
+    for(let i = 0, n = charset.length; i < size; i++){
+      password += charset.charAt(Math.floor(Math.random() * n));
+    }
+
+    alert(password);
+  }
 
   return (
     <View style={styles.container}>
@@ -27,7 +37,7 @@ export default function App() {
           onValueChange={(value) => setSize(Number(value.toFixed(0)))}
         />
       </View>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={generatePassword}>
         <Text style={styles.buttonText}>Gerar Senha</Text>
       </TouchableOpacity>
 
