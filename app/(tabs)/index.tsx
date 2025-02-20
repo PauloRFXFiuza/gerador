@@ -1,10 +1,10 @@
-import { View } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
 import {Routes} from "C:/Users/paulo/Documents/Workspaces/App+Gerador+Senhas/gerador/src/routes"
 
 export default function App(){
   return(
-    <View>
+    <NavigationContainer>
       <Routes/>
-    </View>
+    </NavigationContainer>
   )
 }
