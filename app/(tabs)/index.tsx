@@ -4,7 +4,7 @@ import Slider from '@react-native-community/slider';
 
 export default function App() {
 
-  const [size, setSize] = useState(10);
+  const [size, setSize] = useState(8);
 
 
   return (
@@ -13,7 +13,7 @@ export default function App() {
       source={require('C:/Users/paulo/Documents/Workspaces/App+Gerador+Senhas/gerador/src/assets/logo.png')}
       style={styles.logo}
       />
-      <Text style={styles.title}>20 caracteres</Text>
+      <Text style={styles.title}>{size} caracteres</Text>
       
       <View style={styles.area}>
         <Slider
