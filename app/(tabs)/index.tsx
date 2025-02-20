@@ -23,7 +23,7 @@ export default function App() {
           maximumTrackTintColor="#FF0000"
           minimumTrackTintColor="#000"
           thumbTintColor="#392de9"
-
+          value={size}
         />
       </View>
       <TouchableOpacity style={styles.button}>
