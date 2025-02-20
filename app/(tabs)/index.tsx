@@ -4,7 +4,7 @@ import {Routes} from "C:/Users/paulo/Documents/Workspaces/App+Gerador+Senhas/ger
 export default function App(){
   return(
     <View>
-
+      <Routes/>
     </View>
   )
 }
