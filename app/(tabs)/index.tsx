@@ -8,7 +8,7 @@ export default function App() {
       source={require('C:/Users/paulo/Documents/Workspaces/App+Gerador+Senhas/gerador/src/assets/logo.png')}
       style={styles.logo}
       />
-      <Text>20 catacteres</Text>
+      <Text style={styles.title}>20 catacteres</Text>
     </View>
   );
 }
