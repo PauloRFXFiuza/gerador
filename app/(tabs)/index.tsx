@@ -17,6 +17,8 @@ export default function App() {
           minimumValue={6}
           maximumValue={20}
           maximumTrackTintColor="#FF0000"
+          minimumTrackTintColor="#000"
+          thumbTintColor='#392de9'
         />
       </View>
     </View>
