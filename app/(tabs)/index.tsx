@@ -10,8 +10,13 @@ export default function App() {
       style={styles.logo}
       />
       <Text style={styles.title}>20 caracteres</Text>
+      
       <View style={styles.area}>
-
+        <Slider
+          style={{height: 50}}
+          minimumValue={6}
+          maximumValue={20}
+        />
       </View>
     </View>
   );
@@ -27,4 +32,11 @@ const styles = StyleSheet.create({
   logo:{
     marginBottom: 60
   },
+  area:{
+    marginTop: 14,
+    marginBottom: 14,
+    width: '80%',
+    backgroundColor: '#FFF',
+    borderRadius: 8,
+  }
 });
