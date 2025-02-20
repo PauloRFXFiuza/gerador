@@ -9,6 +9,16 @@ export function ModalPassword(){
                 <Pressable style={styles.innerPassword}>
                     <Text style={styles.text}>Senha Fictícia</Text>
                 </Pressable>
+
+                <View>
+                    <TouchableOpacity>
+                        <Text>Voltar</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity>
+                        <Text>Salvar Senha</Text>
+                    </TouchableOpacity>
+                </View>
             </View>    
             
         </View>
