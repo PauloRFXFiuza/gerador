@@ -1,11 +1,12 @@
 
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Paulo Fiuza</Text>
-      
+      <Image
+      source={require('C:/Users/paulo/Documents/Workspaces/App+Gerador+Senhas/gerador/src/assets/logo.png')}
+      />
     </View>
   );
 }
