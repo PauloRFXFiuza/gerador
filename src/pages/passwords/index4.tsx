@@ -13,16 +13,24 @@ export function Passwords(){
   useEffect(() => {
     async function loadPasswords(){
         const passwords = await getItem("@pass");
-        setListPasswords(passwords);
-    }
+        if (passwords) {
+            setListPasswords(passwords);
+          } else {
+            setListPasswords([]);
+          }
+        }
 
     loadPasswords();
 
   }, [focused])
 
-async function handleDeletePassword(item) {
-    const passwords = await removeItem("@pass", item); 
-    setListPasswords(passwords);
+async function handleDeletePassword(item:string) {
+    const passwords = await removeItem("@pass", item);
+    if (passwords) {
+        setListPasswords(passwords);
+      } else {
+        setListPasswords([]);
+      }
 }
 
   return(
