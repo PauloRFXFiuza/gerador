@@ -2,19 +2,14 @@ import {useState} from "react";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import Slider from "@react-native-community/slider";
 
+let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
 export default function App() {
 
   const  [size, setSize] = useState(10);
 
   function generatePassword(){
-    let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    let password = "";
-
-    for(let i = 0, n = charset.length; i < size; i++){
-      password += charset.charAt(Math.floor(Math.random() * n));
-    }
-
-    alert(password);
+    console.log("CLICOUUUU!")
   }
 
   return (
