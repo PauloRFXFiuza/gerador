@@ -6,13 +6,18 @@ interface ModalPasswordProps {
 }
 
 export function ModalPassword({password, handleClose}: ModalPasswordProps) {
+
+    function handleCopyPassword(){
+        alert("Senha copiada!");
+    }
+
     return(
         <View style={styles.container}>
             <View style={styles.content}>
                 
                 <Text style={styles.title}>Senha Gerada!</Text>
                 
-                <Pressable style={styles.innerPassword}>
+                <Pressable style={styles.innerPassword} onLongPress={handleCopyPassword}>
                     <Text style={styles.text}>
                         {password}
                     </Text>
