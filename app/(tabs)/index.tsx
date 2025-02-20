@@ -6,7 +6,9 @@ export default function App() {
     <View style={styles.container}>
       <Image
       source={require('C:/Users/paulo/Documents/Workspaces/App+Gerador+Senhas/gerador/src/assets/logo.png')}
+      style={styles.logo}
       />
+      <Text>20 catacteres</Text>
     </View>
   );
 }
@@ -17,5 +19,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#F3F3FF',
     justifyContent: 'center',
     alignItems: 'center',
-  }},
-);
+  },
+  logo:{
+    marginBottom: 60
+  },
+});
