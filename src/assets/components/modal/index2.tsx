@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity, Pressable } from "react-native";
 
-export function ModalPassword(){
+export function ModalPassword({password, handleClose}) {
     return(
         <View style={styles.container}>
             <View style={styles.content}>
