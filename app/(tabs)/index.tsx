@@ -50,5 +50,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     borderRadius: 8,
     padding: 6,
-  }
+  },
+  button:{
+    backgroundColor: '#392de9',
+    width: '80%',
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 8,
+    marginBottom: 18,
+  },
+  buttonText:{
+    color: '#FFF',
+    fontSize: 20,
+  },
 });
