@@ -24,6 +24,7 @@ export default function App() {
           minimumTrackTintColor="#000"
           thumbTintColor="#392de9"
           value={size}
+          onValueChange={(value) => setSize(value)}
         />
       </View>
       <TouchableOpacity style={styles.button}>
