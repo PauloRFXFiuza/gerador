@@ -8,6 +8,7 @@ export default function App() {
 
   const  [size, setSize] = useState(10);
   const  [passwordValue, setPasswordValue] = useState("");
+  const  [modalVisible, setModalVisible] = useState(false);
 
   function generatePassword(){
     let password = "";
@@ -15,6 +16,7 @@ export default function App() {
       password += charset.charAt(Math.floor(Math.random() * n));
     }
     setPasswordValue(password);
+    setModalVisible(true);
     console.log(password);
   }
 
