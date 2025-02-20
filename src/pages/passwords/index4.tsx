@@ -12,7 +12,7 @@ export function Passwords(){
   useEffect(() => {
     async function loadPasswords(){
         const passwords = await getItem("@pass");
-
+        setListPasswords(passwords);
     }
 
     loadPasswords();
